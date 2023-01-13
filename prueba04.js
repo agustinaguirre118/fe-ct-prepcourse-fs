@@ -1,15 +1,15 @@
-function esDiezOCinco(num) {
-    // Retornar "true" si "num" es 10 o 5.
-    // De lo contrario, retornar "false".
+function doWhile(num) {
+    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.
+    // Retornar el valor final.
+    // Utilizar el bucle Do-While.
     // Tu código:
-    if(num == "10" || num == "5")
-    console.log("true");
-    else
-    console.log("false");
+    var result = 0
+    do {
+        num = num + 5;
+       console.log(num);
+        result = result +1;
+    }
+    while(result < 8)
  }
 
- esDiezOCinco(10)
- esDiezOCinco(11)
- esDiezOCinco(6)
- esDiezOCinco(5.001)
- esDiezOCinco(5)
+ doWhile(1)
