@@ -1,32 +1,30 @@
-// var numeros = [1, 2, 3, 4, 5, 6, 7]
+function continueStatement(num) {
+    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
+    // Guardar cada nuevo valor en un array y retornarlo.
+    // Cuando el número de iteraciones alcance el valor 5, no se suma ese caso y
+    // se continua con la siguiente iteración.
+    // [PISTA]: utiliza el statement 'continue'.
+    // Tu código:
+    var newArray = []
+    for (i=0; i < 10; i++) {
+       num = num + 2;
+       if (i !== 5) {
+          newArray.push(num);
+          console.log("Acá sumó" + newArray);
+       }
+       else {
+        console.log("Acá no sumó"); 
+        continue; 
+         
+        }
+    }
+        console.log(newArray);
+ 
+ }
+    
+continueStatement(-5)
 
-// console.log(numeros[4]);
 
-// numeros.pop();
-
-// console.log(numeros);
-
-// numeros.push(6);
-
-// console.log(numeros);
-// console.log(numeros.length);
-
-// var masUno =numeros.map((num) => {
-//     return num + 1;})
-
-//     console.log(masUno); 
-var arrayOfNums = [1, 2, 3, 4, 5, 6, 7]
-
-console.log(arrayOfNums);   
-
-    // function agregarNumeros(arrayOfNums) {
-    //     // El parámetro "arrayOfNums" debe ser un arreglo de números.
-    //     // Suma todos los elementos y retorna el resultado.
-    //     // Tu código:
-        
-    //     // var suma = arrayOfNums [0] + arrayOfNums [1] + arrayOfNums [2] + arrayOfNums [3] + arrayOfNums [4];
-    //     console.log(arrayOfNums);   
-    //     // return suma; 
 
         
     
