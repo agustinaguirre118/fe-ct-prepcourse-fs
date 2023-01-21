@@ -216,10 +216,13 @@ function mesesDelAño(array) {
       // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
       // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
       // Tu código:
-      var tabla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-      
-      var result = tabla.map(x => x * 2);
-      return result; 
+      var tabla = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      var tabla6 = [];
+      for (i =0 ; i<tabla.length; i++) {
+         var result = 6 * tabla[i];
+         tabla6.push(result);
+      }
+      return tabla6;
    
    }
 
@@ -273,19 +276,22 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
-   var newArray = []
-   for (i=0; i < 10; i++) {
-      num = num + 2;
-      if (i !== 5) {
-         newArray.push(num);
-      }
-      else {
-        continue; 
-       }
-   }
-       return newArray;
-
+   let i = 0;
+  //Declarar array vacio para guardar los valores
+  let arr = [];
+  // Mientras que i sea menor que 10 ALGO
+  while (i < 10) {
+    if (i === 5) {
+      i++;
+      continue;
+    }
+    num += 2;
+    arr.push(num);
+    i++;
+  }
+  return arr;
 }
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

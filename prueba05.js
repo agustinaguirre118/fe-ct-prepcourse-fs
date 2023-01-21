@@ -6,25 +6,19 @@ function continueStatement(num) {
     // [PISTA]: utiliza el statement 'continue'.
     // Tu código:
     var newArray = []
-    for (i=0; i < 10; i++) {
+    for (i=0; i < 9; i++) {
        num = num + 2;
-       if (i !== 5) {
-          newArray.push(num);
-          console.log("Acá sumó" + newArray);
+       if (i === 5) {
+          continue; 
        }
        else {
-        console.log("Acá no sumó"); 
-        continue; 
-         
+          newArray.push(num);
         }
     }
         console.log(newArray);
  
  }
-    
-continueStatement(-5)
 
-
-
+continueStatement(50)
         
     

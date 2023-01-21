@@ -64,6 +64,8 @@
     precioParcial = objetoProducto["precio"] * objetoProducto["porcentajeDeDescuento"];
     
 precioFinal = objetoProducto["precio"] - precioParcial;
-    console.log(precioFinal);
+    
+console.log(precioFinal);
   }
+
   objetoProducto.calcularPrecioDescuento();
